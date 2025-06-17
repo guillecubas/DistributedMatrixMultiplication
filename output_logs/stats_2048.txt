@@ -1,0 +1,4 @@
+NAME             CPU %     MEM USAGE / LIMIT
+spark-master     0.11%     340.5MiB / 9.615GiB
+spark-worker-2   0.10%     300.7MiB / 9.615GiB
+spark-worker-1   0.11%     290.9MiB / 9.615GiB

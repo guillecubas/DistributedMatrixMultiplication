@@ -1,0 +1,78 @@
+25/06/17 15:02:33 INFO SparkContext: Running Spark version 3.4.1
+25/06/17 15:02:33 INFO ResourceUtils: ==============================================================
+25/06/17 15:02:33 INFO ResourceUtils: No custom resources configured for spark.driver.
+25/06/17 15:02:33 INFO ResourceUtils: ==============================================================
+25/06/17 15:02:33 INFO SparkContext: Submitted application: DistributedMatrixMultiplication
+25/06/17 15:02:34 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+25/06/17 15:02:34 INFO ResourceProfile: Limiting resource is cpus at 1 tasks per executor
+25/06/17 15:02:34 INFO ResourceProfileManager: Added ResourceProfile id: 0
+25/06/17 15:02:34 INFO SecurityManager: Changing view acls to: root,spark
+25/06/17 15:02:34 INFO SecurityManager: Changing modify acls to: root,spark
+25/06/17 15:02:34 INFO SecurityManager: Changing view acls groups to: 
+25/06/17 15:02:34 INFO SecurityManager: Changing modify acls groups to: 
+25/06/17 15:02:34 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: root, spark; groups with view permissions: EMPTY; users with modify permissions: root, spark; groups with modify permissions: EMPTY
+25/06/17 15:02:34 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+25/06/17 15:02:34 INFO Utils: Successfully started service 'sparkDriver' on port 38965.
+25/06/17 15:02:34 INFO SparkEnv: Registering MapOutputTracker
+25/06/17 15:02:34 INFO SparkEnv: Registering BlockManagerMaster
+25/06/17 15:02:34 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+25/06/17 15:02:34 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+25/06/17 15:02:34 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+25/06/17 15:02:34 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-00d659c0-7f07-4844-9883-629290f4a9fb
+25/06/17 15:02:34 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+25/06/17 15:02:34 INFO SparkEnv: Registering OutputCommitCoordinator
+25/06/17 15:02:34 INFO JettyUtils: Start Jetty spark-master:4040 for SparkUI
+25/06/17 15:02:34 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+25/06/17 15:02:34 INFO SparkContext: Added JAR file:/app/SparkMatrixMultiplication-1.0-SNAPSHOT.jar at spark://645ff7a182cc:38965/jars/SparkMatrixMultiplication-1.0-SNAPSHOT.jar with timestamp 1750172553943
+25/06/17 15:02:34 INFO Executor: Starting executor ID driver on host 645ff7a182cc
+25/06/17 15:02:34 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+25/06/17 15:02:34 INFO Executor: Fetching spark://645ff7a182cc:38965/jars/SparkMatrixMultiplication-1.0-SNAPSHOT.jar with timestamp 1750172553943
+25/06/17 15:02:34 INFO TransportClientFactory: Successfully created connection to 645ff7a182cc/172.18.0.4:38965 after 28 ms (0 ms spent in bootstraps)
+25/06/17 15:02:35 INFO Utils: Fetching spark://645ff7a182cc:38965/jars/SparkMatrixMultiplication-1.0-SNAPSHOT.jar to /tmp/spark-68a5705f-5ff1-4835-b3f4-9bc51212724b/userFiles-0fd031aa-f889-4e16-964c-b72562fe7100/fetchFileTemp6254675548905177748.tmp
+25/06/17 15:02:35 INFO Executor: Adding file:/tmp/spark-68a5705f-5ff1-4835-b3f4-9bc51212724b/userFiles-0fd031aa-f889-4e16-964c-b72562fe7100/SparkMatrixMultiplication-1.0-SNAPSHOT.jar to class loader
+25/06/17 15:02:35 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 44297.
+25/06/17 15:02:35 INFO NettyBlockTransferService: Server created on 645ff7a182cc:44297
+25/06/17 15:02:35 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+25/06/17 15:02:35 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 645ff7a182cc, 44297, None)
+25/06/17 15:02:35 INFO BlockManagerMasterEndpoint: Registering block manager 645ff7a182cc:44297 with 434.4 MiB RAM, BlockManagerId(driver, 645ff7a182cc, 44297, None)
+25/06/17 15:02:35 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 645ff7a182cc, 44297, None)
+25/06/17 15:02:35 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 645ff7a182cc, 44297, None)
+25/06/17 15:02:35 INFO SingleEventLogFileWriter: Logging events to file:/tmp/spark-events/local-1750172554869.inprogress
+25/06/17 15:02:37 INFO SparkContext: Starting job: take at SparkMatrixMultiplication.java:35
+25/06/17 15:02:37 INFO DAGScheduler: Got job 0 (take at SparkMatrixMultiplication.java:35) with 1 output partitions
+25/06/17 15:02:37 INFO DAGScheduler: Final stage: ResultStage 0 (take at SparkMatrixMultiplication.java:35)
+25/06/17 15:02:37 INFO DAGScheduler: Parents of final stage: List()
+25/06/17 15:02:37 INFO DAGScheduler: Missing parents: List()
+25/06/17 15:02:37 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[3] at mapToPair at SparkMatrixMultiplication.java:26), which has no missing parents
+25/06/17 15:02:37 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 4.6 KiB, free 434.4 MiB)
+25/06/17 15:02:37 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 2.5 KiB, free 434.4 MiB)
+25/06/17 15:02:37 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 645ff7a182cc:44297 (size: 2.5 KiB, free: 434.4 MiB)
+25/06/17 15:02:37 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1535
+25/06/17 15:02:37 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at mapToPair at SparkMatrixMultiplication.java:26) (first 15 tasks are for partitions Vector(0))
+25/06/17 15:02:37 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+25/06/17 15:02:37 WARN TaskSetManager: Stage 0 contains a task of very large size (32800 KiB). The maximum recommended task size is 1000 KiB.
+25/06/17 15:02:37 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (645ff7a182cc, executor driver, partition 0, PROCESS_LOCAL, 33587974 bytes) 
+25/06/17 15:02:37 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+25/06/17 15:02:37 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1304 bytes result sent to driver
+25/06/17 15:02:37 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 410 ms on 645ff7a182cc (executor driver) (1/1)
+25/06/17 15:02:37 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+25/06/17 15:02:37 INFO DAGScheduler: ResultStage 0 (take at SparkMatrixMultiplication.java:35) finished in 0.631 s
+25/06/17 15:02:37 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+25/06/17 15:02:37 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+25/06/17 15:02:37 INFO DAGScheduler: Job 0 finished: take at SparkMatrixMultiplication.java:35, took 0.687744 s
+C[0][0] = 1016.3056179560444
+C[0][1] = 1028.0000458405411
+C[0][2] = 1027.2790043353166
+C[0][3] = 1036.9551284887941
+C[0][4] = 1038.1532187892378
+25/06/17 15:02:37 INFO SparkContext: SparkContext is stopping with exitCode 0.
+25/06/17 15:02:37 INFO SparkUI: Stopped Spark web UI at http://645ff7a182cc:4040
+25/06/17 15:02:37 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+25/06/17 15:02:37 INFO MemoryStore: MemoryStore cleared
+25/06/17 15:02:37 INFO BlockManager: BlockManager stopped
+25/06/17 15:02:37 INFO BlockManagerMaster: BlockManagerMaster stopped
+25/06/17 15:02:37 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+25/06/17 15:02:37 INFO SparkContext: Successfully stopped SparkContext
+25/06/17 15:02:37 INFO ShutdownHookManager: Shutdown hook called
+25/06/17 15:02:37 INFO ShutdownHookManager: Deleting directory /tmp/spark-68a5705f-5ff1-4835-b3f4-9bc51212724b
+25/06/17 15:02:37 INFO ShutdownHookManager: Deleting directory /tmp/spark-7d067c64-3862-4691-a941-6a6d59866243

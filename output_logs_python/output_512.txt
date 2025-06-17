@@ -1,0 +1,180 @@
+25/06/17 15:09:42 INFO SparkContext: Running Spark version 3.4.1
+25/06/17 15:09:42 INFO ResourceUtils: ==============================================================
+25/06/17 15:09:42 INFO ResourceUtils: No custom resources configured for spark.driver.
+25/06/17 15:09:42 INFO ResourceUtils: ==============================================================
+25/06/17 15:09:42 INFO SparkContext: Submitted application: DistributedMatrixMultiplication
+25/06/17 15:09:42 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+25/06/17 15:09:42 INFO ResourceProfile: Limiting resource is cpus at 1 tasks per executor
+25/06/17 15:09:42 INFO ResourceProfileManager: Added ResourceProfile id: 0
+25/06/17 15:09:42 INFO SecurityManager: Changing view acls to: root,spark
+25/06/17 15:09:42 INFO SecurityManager: Changing modify acls to: root,spark
+25/06/17 15:09:42 INFO SecurityManager: Changing view acls groups to: 
+25/06/17 15:09:42 INFO SecurityManager: Changing modify acls groups to: 
+25/06/17 15:09:42 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: root, spark; groups with view permissions: EMPTY; users with modify permissions: root, spark; groups with modify permissions: EMPTY
+25/06/17 15:09:42 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+25/06/17 15:09:43 INFO Utils: Successfully started service 'sparkDriver' on port 33381.
+25/06/17 15:09:43 INFO SparkEnv: Registering MapOutputTracker
+25/06/17 15:09:43 INFO SparkEnv: Registering BlockManagerMaster
+25/06/17 15:09:43 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+25/06/17 15:09:43 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+25/06/17 15:09:43 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+25/06/17 15:09:43 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-3c3a0527-391c-4250-8781-09f3b05ab9be
+25/06/17 15:09:43 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+25/06/17 15:09:43 INFO SparkEnv: Registering OutputCommitCoordinator
+25/06/17 15:09:43 INFO JettyUtils: Start Jetty spark-master:4040 for SparkUI
+25/06/17 15:09:43 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+25/06/17 15:09:43 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://spark-master:7077...
+25/06/17 15:09:43 INFO TransportClientFactory: Successfully created connection to spark-master/172.18.0.4:7077 after 20 ms (0 ms spent in bootstraps)
+25/06/17 15:09:43 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20250617150943-0001
+25/06/17 15:09:43 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20250617150943-0001/0 on worker-20250617142558-172.18.0.3-35375 (172.18.0.3:35375) with 1 core(s)
+25/06/17 15:09:43 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 46849.
+25/06/17 15:09:43 INFO NettyBlockTransferService: Server created on 645ff7a182cc:46849
+25/06/17 15:09:43 INFO StandaloneSchedulerBackend: Granted executor ID app-20250617150943-0001/0 on hostPort 172.18.0.3:35375 with 1 core(s), 1024.0 MiB RAM
+25/06/17 15:09:43 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+25/06/17 15:09:43 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20250617150943-0001/1 on worker-20250617142558-172.18.0.3-35375 (172.18.0.3:35375) with 1 core(s)
+25/06/17 15:09:43 INFO StandaloneSchedulerBackend: Granted executor ID app-20250617150943-0001/1 on hostPort 172.18.0.3:35375 with 1 core(s), 1024.0 MiB RAM
+25/06/17 15:09:43 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20250617150943-0001/2 on worker-20250617142558-172.18.0.3-35375 (172.18.0.3:35375) with 1 core(s)
+25/06/17 15:09:43 INFO StandaloneSchedulerBackend: Granted executor ID app-20250617150943-0001/2 on hostPort 172.18.0.3:35375 with 1 core(s), 1024.0 MiB RAM
+25/06/17 15:09:43 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20250617150943-0001/3 on worker-20250617142558-172.18.0.3-35375 (172.18.0.3:35375) with 1 core(s)
+25/06/17 15:09:43 INFO StandaloneSchedulerBackend: Granted executor ID app-20250617150943-0001/3 on hostPort 172.18.0.3:35375 with 1 core(s), 1024.0 MiB RAM
+25/06/17 15:09:43 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20250617150943-0001/4 on worker-20250617142558-172.18.0.3-35375 (172.18.0.3:35375) with 1 core(s)
+25/06/17 15:09:43 INFO StandaloneSchedulerBackend: Granted executor ID app-20250617150943-0001/4 on hostPort 172.18.0.3:35375 with 1 core(s), 1024.0 MiB RAM
+25/06/17 15:09:43 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20250617150943-0001/5 on worker-20250617142558-172.18.0.3-35375 (172.18.0.3:35375) with 1 core(s)
+25/06/17 15:09:43 INFO StandaloneSchedulerBackend: Granted executor ID app-20250617150943-0001/5 on hostPort 172.18.0.3:35375 with 1 core(s), 1024.0 MiB RAM
+25/06/17 15:09:43 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 645ff7a182cc, 46849, None)
+25/06/17 15:09:43 INFO BlockManagerMasterEndpoint: Registering block manager 645ff7a182cc:46849 with 434.4 MiB RAM, BlockManagerId(driver, 645ff7a182cc, 46849, None)
+25/06/17 15:09:43 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 645ff7a182cc, 46849, None)
+25/06/17 15:09:43 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 645ff7a182cc, 46849, None)
+25/06/17 15:09:43 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20250617150943-0001/6 on worker-20250617142558-172.18.0.3-35375 (172.18.0.3:35375) with 1 core(s)
+25/06/17 15:09:43 INFO StandaloneSchedulerBackend: Granted executor ID app-20250617150943-0001/6 on hostPort 172.18.0.3:35375 with 1 core(s), 1024.0 MiB RAM
+25/06/17 15:09:43 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20250617150943-0001/7 on worker-20250617142558-172.18.0.3-35375 (172.18.0.3:35375) with 1 core(s)
+25/06/17 15:09:43 INFO StandaloneSchedulerBackend: Granted executor ID app-20250617150943-0001/7 on hostPort 172.18.0.3:35375 with 1 core(s), 1024.0 MiB RAM
+25/06/17 15:09:43 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20250617150943-0001/8 on worker-20250617142558-172.18.0.2-43731 (172.18.0.2:43731) with 1 core(s)
+25/06/17 15:09:43 INFO StandaloneSchedulerBackend: Granted executor ID app-20250617150943-0001/8 on hostPort 172.18.0.2:43731 with 1 core(s), 1024.0 MiB RAM
+25/06/17 15:09:43 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20250617150943-0001/9 on worker-20250617142558-172.18.0.2-43731 (172.18.0.2:43731) with 1 core(s)
+25/06/17 15:09:43 INFO StandaloneSchedulerBackend: Granted executor ID app-20250617150943-0001/9 on hostPort 172.18.0.2:43731 with 1 core(s), 1024.0 MiB RAM
+25/06/17 15:09:43 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20250617150943-0001/10 on worker-20250617142558-172.18.0.2-43731 (172.18.0.2:43731) with 1 core(s)
+25/06/17 15:09:43 INFO StandaloneSchedulerBackend: Granted executor ID app-20250617150943-0001/10 on hostPort 172.18.0.2:43731 with 1 core(s), 1024.0 MiB RAM
+25/06/17 15:09:43 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20250617150943-0001/11 on worker-20250617142558-172.18.0.2-43731 (172.18.0.2:43731) with 1 core(s)
+25/06/17 15:09:43 INFO StandaloneSchedulerBackend: Granted executor ID app-20250617150943-0001/11 on hostPort 172.18.0.2:43731 with 1 core(s), 1024.0 MiB RAM
+25/06/17 15:09:43 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20250617150943-0001/12 on worker-20250617142558-172.18.0.2-43731 (172.18.0.2:43731) with 1 core(s)
+25/06/17 15:09:43 INFO StandaloneSchedulerBackend: Granted executor ID app-20250617150943-0001/12 on hostPort 172.18.0.2:43731 with 1 core(s), 1024.0 MiB RAM
+25/06/17 15:09:43 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20250617150943-0001/13 on worker-20250617142558-172.18.0.2-43731 (172.18.0.2:43731) with 1 core(s)
+25/06/17 15:09:43 INFO StandaloneSchedulerBackend: Granted executor ID app-20250617150943-0001/13 on hostPort 172.18.0.2:43731 with 1 core(s), 1024.0 MiB RAM
+25/06/17 15:09:43 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20250617150943-0001/14 on worker-20250617142558-172.18.0.2-43731 (172.18.0.2:43731) with 1 core(s)
+25/06/17 15:09:43 INFO StandaloneSchedulerBackend: Granted executor ID app-20250617150943-0001/14 on hostPort 172.18.0.2:43731 with 1 core(s), 1024.0 MiB RAM
+25/06/17 15:09:43 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20250617150943-0001/15 on worker-20250617142558-172.18.0.2-43731 (172.18.0.2:43731) with 1 core(s)
+25/06/17 15:09:43 INFO StandaloneSchedulerBackend: Granted executor ID app-20250617150943-0001/15 on hostPort 172.18.0.2:43731 with 1 core(s), 1024.0 MiB RAM
+25/06/17 15:09:43 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20250617150943-0001/11 is now RUNNING
+25/06/17 15:09:43 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20250617150943-0001/2 is now RUNNING
+25/06/17 15:09:43 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20250617150943-0001/12 is now RUNNING
+25/06/17 15:09:44 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20250617150943-0001/0 is now RUNNING
+25/06/17 15:09:44 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20250617150943-0001/5 is now RUNNING
+25/06/17 15:09:44 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20250617150943-0001/6 is now RUNNING
+25/06/17 15:09:44 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20250617150943-0001/14 is now RUNNING
+25/06/17 15:09:44 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20250617150943-0001/13 is now RUNNING
+25/06/17 15:09:44 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20250617150943-0001/4 is now RUNNING
+25/06/17 15:09:44 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20250617150943-0001/7 is now RUNNING
+25/06/17 15:09:44 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20250617150943-0001/1 is now RUNNING
+25/06/17 15:09:44 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20250617150943-0001/3 is now RUNNING
+25/06/17 15:09:44 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20250617150943-0001/8 is now RUNNING
+25/06/17 15:09:44 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20250617150943-0001/9 is now RUNNING
+25/06/17 15:09:44 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20250617150943-0001/10 is now RUNNING
+25/06/17 15:09:44 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20250617150943-0001/15 is now RUNNING
+25/06/17 15:09:44 INFO SingleEventLogFileWriter: Logging events to file:/tmp/spark-events/app-20250617150943-0001.inprogress
+25/06/17 15:09:44 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+25/06/17 15:09:46 INFO SparkContext: Starting job: collect at /app/spark_matrix_mult.py:31
+25/06/17 15:09:46 INFO DAGScheduler: Got job 0 (collect at /app/spark_matrix_mult.py:31) with 4 output partitions
+25/06/17 15:09:46 INFO DAGScheduler: Final stage: ResultStage 0 (collect at /app/spark_matrix_mult.py:31)
+25/06/17 15:09:46 INFO DAGScheduler: Parents of final stage: List()
+25/06/17 15:09:46 INFO DAGScheduler: Missing parents: List()
+25/06/17 15:09:46 INFO DAGScheduler: Submitting ResultStage 0 (PythonRDD[3] at collect at /app/spark_matrix_mult.py:31), which has no missing parents
+25/06/17 15:09:47 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 6.5 KiB, free 434.4 MiB)
+25/06/17 15:09:47 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 4.1 KiB, free 434.4 MiB)
+25/06/17 15:09:47 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 645ff7a182cc:46849 (size: 4.1 KiB, free: 434.4 MiB)
+25/06/17 15:09:47 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1535
+25/06/17 15:09:47 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 0 (PythonRDD[3] at collect at /app/spark_matrix_mult.py:31) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+25/06/17 15:09:47 INFO TaskSchedulerImpl: Adding task set 0.0 with 4 tasks resource profile 0
+25/06/17 15:10:04 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+25/06/17 15:10:13 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.18.0.2:43596) with ID 14,  ResourceProfileId 0
+25/06/17 15:10:14 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.18.0.2:38480) with ID 9,  ResourceProfileId 0
+25/06/17 15:10:14 INFO BlockManagerMasterEndpoint: Registering block manager 172.18.0.2:45319 with 434.4 MiB RAM, BlockManagerId(14, 172.18.0.2, 45319, None)
+25/06/17 15:10:14 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.18.0.2:38468) with ID 13,  ResourceProfileId 0
+25/06/17 15:10:14 INFO BlockManagerMasterEndpoint: Registering block manager 172.18.0.2:37743 with 434.4 MiB RAM, BlockManagerId(9, 172.18.0.2, 37743, None)
+25/06/17 15:10:14 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.18.0.3:52406) with ID 3,  ResourceProfileId 0
+25/06/17 15:10:14 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.18.0.3:52370) with ID 2,  ResourceProfileId 0
+25/06/17 15:10:14 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.18.0.2:38524) with ID 15,  ResourceProfileId 0
+25/06/17 15:10:15 WARN TaskSetManager: Stage 0 contains a task of very large size (2072 KiB). The maximum recommended task size is 1000 KiB.
+25/06/17 15:10:15 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (172.18.0.2, executor 9, partition 0, PROCESS_LOCAL, 2122586 bytes) 
+25/06/17 15:10:15 INFO BlockManagerMasterEndpoint: Registering block manager 172.18.0.2:44003 with 434.4 MiB RAM, BlockManagerId(13, 172.18.0.2, 44003, None)
+25/06/17 15:10:15 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1) (172.18.0.2, executor 14, partition 1, PROCESS_LOCAL, 2122842 bytes) 
+25/06/17 15:10:15 INFO BlockManagerMasterEndpoint: Registering block manager 172.18.0.3:42669 with 434.4 MiB RAM, BlockManagerId(2, 172.18.0.3, 42669, None)
+25/06/17 15:10:15 INFO BlockManagerMasterEndpoint: Registering block manager 172.18.0.2:38505 with 434.4 MiB RAM, BlockManagerId(15, 172.18.0.2, 38505, None)
+25/06/17 15:10:15 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.18.0.2:38508) with ID 8,  ResourceProfileId 0
+25/06/17 15:10:15 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.18.0.3:52422) with ID 0,  ResourceProfileId 0
+25/06/17 15:10:16 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.18.0.2:38544) with ID 11,  ResourceProfileId 0
+25/06/17 15:10:16 INFO TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2) (172.18.0.2, executor 13, partition 2, PROCESS_LOCAL, 2122842 bytes) 
+25/06/17 15:10:16 INFO TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3) (172.18.0.3, executor 2, partition 3, PROCESS_LOCAL, 2123098 bytes) 
+25/06/17 15:10:16 INFO BlockManagerMasterEndpoint: Registering block manager 172.18.0.3:45755 with 434.4 MiB RAM, BlockManagerId(3, 172.18.0.3, 45755, None)
+25/06/17 15:10:16 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.18.0.2:38526) with ID 12,  ResourceProfileId 0
+25/06/17 15:10:16 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.18.0.3:52428) with ID 7,  ResourceProfileId 0
+25/06/17 15:10:16 INFO BlockManagerMasterEndpoint: Registering block manager 172.18.0.3:44155 with 434.4 MiB RAM, BlockManagerId(0, 172.18.0.3, 44155, None)
+25/06/17 15:10:16 INFO BlockManagerMasterEndpoint: Registering block manager 172.18.0.2:34553 with 434.4 MiB RAM, BlockManagerId(8, 172.18.0.2, 34553, None)
+25/06/17 15:10:16 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.18.0.3:52440) with ID 6,  ResourceProfileId 0
+25/06/17 15:10:16 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.18.0.2:38552) with ID 10,  ResourceProfileId 0
+25/06/17 15:10:16 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.18.0.3:52434) with ID 5,  ResourceProfileId 0
+25/06/17 15:10:16 INFO BlockManagerMasterEndpoint: Registering block manager 172.18.0.2:35955 with 434.4 MiB RAM, BlockManagerId(11, 172.18.0.2, 35955, None)
+25/06/17 15:10:17 INFO BlockManagerMasterEndpoint: Registering block manager 172.18.0.2:42329 with 434.4 MiB RAM, BlockManagerId(12, 172.18.0.2, 42329, None)
+25/06/17 15:10:17 INFO BlockManagerMasterEndpoint: Registering block manager 172.18.0.3:36819 with 434.4 MiB RAM, BlockManagerId(7, 172.18.0.3, 36819, None)
+25/06/17 15:10:17 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.18.0.3:52462) with ID 4,  ResourceProfileId 0
+25/06/17 15:10:17 INFO BlockManagerMasterEndpoint: Registering block manager 172.18.0.3:33269 with 434.4 MiB RAM, BlockManagerId(6, 172.18.0.3, 33269, None)
+25/06/17 15:10:17 INFO BlockManagerMasterEndpoint: Registering block manager 172.18.0.2:43313 with 434.4 MiB RAM, BlockManagerId(10, 172.18.0.2, 43313, None)
+25/06/17 15:10:17 INFO BlockManagerMasterEndpoint: Registering block manager 172.18.0.3:39899 with 434.4 MiB RAM, BlockManagerId(5, 172.18.0.3, 39899, None)
+25/06/17 15:10:17 INFO BlockManagerMasterEndpoint: Registering block manager 172.18.0.3:35181 with 434.4 MiB RAM, BlockManagerId(4, 172.18.0.3, 35181, None)
+25/06/17 15:10:17 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.18.0.3:52450) with ID 1,  ResourceProfileId 0
+25/06/17 15:10:18 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 172.18.0.2:37743 (size: 4.1 KiB, free: 434.4 MiB)
+25/06/17 15:10:18 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 172.18.0.3:42669 (size: 4.1 KiB, free: 434.4 MiB)
+25/06/17 15:10:18 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 172.18.0.2:45319 (size: 4.1 KiB, free: 434.4 MiB)
+25/06/17 15:10:18 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 172.18.0.2:44003 (size: 4.1 KiB, free: 434.4 MiB)
+25/06/17 15:10:18 INFO BlockManagerMasterEndpoint: Registering block manager 172.18.0.3:46579 with 434.4 MiB RAM, BlockManagerId(1, 172.18.0.3, 46579, None)
+25/06/17 15:10:22 INFO BlockManagerInfo: Added taskresult_3 in memory on 172.18.0.3:42669 (size: 1224.3 KiB, free: 433.2 MiB)
+25/06/17 15:10:22 INFO BlockManagerInfo: Added taskresult_0 in memory on 172.18.0.2:37743 (size: 1095.6 KiB, free: 433.3 MiB)
+25/06/17 15:10:22 INFO BlockManagerInfo: Added taskresult_1 in memory on 172.18.0.2:45319 (size: 1159.9 KiB, free: 433.3 MiB)
+25/06/17 15:10:22 INFO TransportClientFactory: Successfully created connection to /172.18.0.2:37743 after 3 ms (0 ms spent in bootstraps)
+25/06/17 15:10:22 INFO TransportClientFactory: Successfully created connection to /172.18.0.3:42669 after 5 ms (0 ms spent in bootstraps)
+25/06/17 15:10:22 INFO TransportClientFactory: Successfully created connection to /172.18.0.2:45319 after 2 ms (0 ms spent in bootstraps)
+25/06/17 15:10:22 INFO TaskSetManager: Finished task 3.0 in stage 0.0 (TID 3) in 6461 ms on 172.18.0.3 (executor 2) (1/4)
+25/06/17 15:10:22 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 7567 ms on 172.18.0.2 (executor 9) (2/4)
+25/06/17 15:10:22 INFO BlockManagerInfo: Added taskresult_2 in memory on 172.18.0.2:44003 (size: 1159.9 KiB, free: 433.3 MiB)
+25/06/17 15:10:22 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 7238 ms on 172.18.0.2 (executor 14) (3/4)
+25/06/17 15:10:22 INFO PythonAccumulatorV2: Connected to AccumulatorServer at host: 127.0.0.1 port: 41079
+25/06/17 15:10:22 INFO BlockManagerInfo: Removed taskresult_3 on 172.18.0.3:42669 in memory (size: 1224.3 KiB, free: 434.4 MiB)
+25/06/17 15:10:22 INFO BlockManagerInfo: Removed taskresult_0 on 172.18.0.2:37743 in memory (size: 1095.6 KiB, free: 434.4 MiB)
+25/06/17 15:10:22 INFO BlockManagerInfo: Removed taskresult_1 on 172.18.0.2:45319 in memory (size: 1159.9 KiB, free: 434.4 MiB)
+25/06/17 15:10:22 INFO TransportClientFactory: Successfully created connection to /172.18.0.2:44003 after 8 ms (0 ms spent in bootstraps)
+25/06/17 15:10:22 INFO TaskSetManager: Finished task 2.0 in stage 0.0 (TID 2) in 6651 ms on 172.18.0.2 (executor 13) (4/4)
+25/06/17 15:10:22 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+25/06/17 15:10:22 INFO DAGScheduler: ResultStage 0 (collect at /app/spark_matrix_mult.py:31) finished in 35.690 s
+25/06/17 15:10:22 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+25/06/17 15:10:22 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+25/06/17 15:10:22 INFO BlockManagerInfo: Removed taskresult_2 on 172.18.0.2:44003 in memory (size: 1159.9 KiB, free: 434.4 MiB)
+25/06/17 15:10:22 INFO DAGScheduler: Job 0 finished: collect at /app/spark_matrix_mult.py:31, took 32.320720 s
+C[0][0] = 124.6393
+C[0][1] = 120.4072
+C[0][2] = 128.3098
+C[0][3] = 123.1016
+C[0][4] = 135.4433
+25/06/17 15:10:22 INFO SparkContext: SparkContext is stopping with exitCode 0.
+25/06/17 15:10:22 INFO SparkUI: Stopped Spark web UI at http://645ff7a182cc:4040
+25/06/17 15:10:22 INFO StandaloneSchedulerBackend: Shutting down all executors
+25/06/17 15:10:22 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Asking each executor to shut down
+25/06/17 15:10:23 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+25/06/17 15:10:23 INFO MemoryStore: MemoryStore cleared
+25/06/17 15:10:23 INFO BlockManager: BlockManager stopped
+25/06/17 15:10:23 INFO BlockManagerMaster: BlockManagerMaster stopped
+25/06/17 15:10:23 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+25/06/17 15:10:23 INFO SparkContext: Successfully stopped SparkContext
+25/06/17 15:10:23 INFO ShutdownHookManager: Shutdown hook called
+25/06/17 15:10:23 INFO ShutdownHookManager: Deleting directory /tmp/spark-6c71fc9b-4c8d-49d4-91dc-d66d5ec0948c
+25/06/17 15:10:23 INFO ShutdownHookManager: Deleting directory /tmp/spark-addee1a9-9309-4fea-9cef-ba77f5fe91a5
+25/06/17 15:10:23 INFO ShutdownHookManager: Deleting directory /tmp/spark-addee1a9-9309-4fea-9cef-ba77f5fe91a5/pyspark-3241905c-7b22-4250-b213-9ca3a4ca7583
