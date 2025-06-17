@@ -1,3 +1,7 @@
 FROM bitnami/spark:3.4.1
 
+USER root
+RUN apt-get update && apt-get install -y python3-pip && pip3 install numpy
+
+USER 1001  # volver al usuario de Bitnami
 COPY spark-defaults.conf /opt/bitnami/spark/conf/
