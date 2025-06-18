@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2a9257b4-0f4c-48c8-b754-c5fa10852066" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/spark/DOCKERFILE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/spark/spark-defaults.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/effective-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/org/ulpgc/MatrixUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/org/ulpgc/SparkMatrixMultiplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_logs/output_1024.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_logs/output_2048.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_logs/output_4096.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_logs/output_512.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_logs/stats_1024.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_logs/stats_2048.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_logs/stats_4096.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_logs/stats_512.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_logs_python/output_512.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/spark_matrix_mult.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_java_spark.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_python_spark.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/run_java_spark.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/run_python_spark.sh" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2ydKayHgGRzUG9WRYo4EoMBxZCy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Guille/OneDrive - Universidad de Las Palmas de Gran Canaria/Desktop/JavaDistributedMatrixMultiplication",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2a9257b4-0f4c-48c8-b754-c5fa10852066" name="Changes" comment="" />
+      <created>1750159079706</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1750159079706</updated>
+    </task>
+    <servers />
+  </component>
+</project>
