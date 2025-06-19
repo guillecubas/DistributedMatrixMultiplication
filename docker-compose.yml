@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  hazelcast1:
+    image: hazelcast/hazelcast:5.3
+    hostname: hazelcast1
+    environment:
+      - HZ_CLUSTERNAME=dev
+      - JAVA_OPTS=-Xms2G -Xmx2G
+    ports:
+      - "5701:5701"
+
+  hazelcast2:
+    image: hazelcast/hazelcast:5.3
+    hostname: hazelcast2
+    environment:
+      - HZ_CLUSTERNAME=dev
+      - JAVA_OPTS=-Xms2G -Xmx2G
+
+  client:
+    build: .
+    depends_on:
+      - hazelcast1
+      - hazelcast2
+    environment:
+      - HZ_CLUSTERNAME=dev
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: ["python", "main.py"]
